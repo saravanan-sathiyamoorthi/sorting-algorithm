@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Saravanan-Sathiyamoorthi" />
+    <link rel="stylesheet" href="./media/style.css" />
+    <link rel="stylesheet" href="./media/testmodal.css" />
+    <link rel="shortcut icon" href="./media/favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <title>Sorting Visualizer</title>
+  </head>
+  <body>
+    <button id="about"><a href="./readme.md" target="_blank">readme</a></button>
+    <header class="header">
+      <!-- header area -->
+      <span><h1>Sorting Visualizer</h1></span>
+      <nav>
+        <div class="createArray" id="createArray">
+          <button id="generate">NewArray</button>
+          <input
+            type="range"
+            name="array_size"
+            id="array_size"
+            min="25"
+            max="300"
+            step="5"
+            value="110"
+          />
+          value : <span id="size"></span>
+        </div>
+        <div class="algorithm" id="algorithm">
+          <button id="bubble">BubbleSort</button>
+          <button id="heap">HeapSort</button>
+          <button id="insertion">InsertionSort</button>
+          <button id="merge">MergeSort</button>
+          <button id="quick">QuickSort</button>
+          <button id="selection">SelectionSort</button>
+        </div>
+        <button id="test">Test!</button>
+      </nav>
+    </header>
+    <modal id="modal">
+      <div class="modalcontent">
+        <div class="modalheader">
+          <h2>Running Test!</h2>
+          <span><button id="closemodal">&times;</button></span>
+        </div>
+        <div class="modalbody" id="modalbody">
+          <div class="testelements" id="bubbletrue">
+            &#10003; Bubble Sort Algoritm Successfull!
+            <a href="https://www.geeksforgeeks.org/bubble-sort/" target="_blank"
+              ><i class="fas fa-info"></i
+            ></a>
+          </div>
+          <div class="testelements" id="bubblefalse">
+            &times; Bubble sort Algorithm Falied!
+            <a href="https://www.geeksforgeeks.org/bubble-sort/" target="_blank"
+              ><i class="fas fa-info"></i
+            ></a>
+          </div>
+          <div class="testelements" id="heaptrue">
+            &#10003; Heap Sort Algorithm Successfull!
+            <a href="https://www.geeksforgeeks.org/heap-sort/" target="_blank"
+              ><i class="fas fa-info"></i
+            ></a>
+          </div>
+          <div class="testelements" id="heapfalse">
+            &times; Heap Sort Algorithm Falied!
+            <a href="https://www.geeksforgeeks.org/heap-sort/" target="_blank"
+              ><i class="fas fa-info"></i
+            ></a>
+          </div>
+          <div class="testelements" id="insertiontrue">
+            &#10003; Insertion Sort Algorithm Successfull!
+            <a
+              href="https://www.geeksforgeeks.org/insertion-sort/"
+              target="_blank"
+              ><i class="fas fa-info"></i
+            ></a>
+          </div>
+          <div class="testelements" id="insertionfalse">
+            &times; Insertion Sort Algorithm Falied!
+            <a
+              href="https://www.geeksforgeeks.org/insertion-sort/"
+              target="_blank"
+              ><i class="fas fa-info"></i
+            ></a>
+          </div>
+          <div class="testelements" id="mergetrue">
+            &#10003; Merge Sort Algorithm Successfull!
+            <a href="https://www.geeksforgeeks.org/merge-sort/" target="_blank"
+              ><i class="fas fa-info"></i
+            ></a>
+          </div>
+          <div class="testelements" id="mergefalse">
+            &times; Merge Sort Algorithm Falied!
+            <a href="https://www.geeksforgeeks.org/merge-sort/" target="_blank"
+              ><i class="fas fa-info"></i
+            ></a>
+          </div>
+          <div class="testelements" id="quicktrue">
+            &#10003; Quick Sort Algorithm Successfull!
+            <a href="https://www.geeksforgeeks.org/quick-sort/" target="_blank"
+              ><i class="fas fa-info"></i
+            ></a>
+          </div>
+          <div class="testelements" id="quickfalse">
+            &times; Quick Sort Algorithm Falied!
+            <a href="https://www.geeksforgeeks.org/quick-sort/" target="_blank"
+              ><i class="fas fa-info"></i
+            ></a>
+          </div>
+          <div class="testelements" id="selectiontrue">
+            &#10003; Selection Sort Algorithm Successfull!
+            <a
+              href="https://www.geeksforgeeks.org/selection-sort/"
+              target="_blank"
+              ><i class="fas fa-info"></i
+            ></a>
+          </div>
+          <div class="testelements" id="selectionfalse">
+            &times; Selection Sort Algorithm Falied!
+            <a
+              href="https://www.geeksforgeeks.org/selection-sort/"
+              target="_blank"
+              ><i class="fas fa-info"></i
+            ></a>
+          </div>
+        </div>
+        <div class="modalfooter">
+          <button id="testvisualize">Lets Visualize!</button>
+        </div>
+      </div>
+    </modal>
+    <visualizer id="container">
+      <!-- visualization container -->
+    </visualizer>
+    <footer class="footer">
+      <!-- footer area -->
+      &copy; 2021 Saravanan Sathiyamoorthi
+      <a href="https://github.com/SARAVANAN-SATHIYAMOORTHI"
+        ><i class="fab fa-github"></i> Git-hub Repository</a
+      >
+      <a
+        href="https://www.linkedin.com/in/saravanan-sathiyamoorthi/"
+        target="blank_"
+        ><i class="fab fa-linkedin"></i> Linkedin</a
+      >
+      <a href="./media/mail.html"> <i class="far fa-envelope"></i> Mail</a>
+    </footer>
+    <script src="./script/script.js"></script>
+    <script src="./script/visualizer.js"></script>
+    <script src="./script/test.js"></script>
+    <script src="./script/Algorithms/bubbleSort.js"></script>
+    <script src="./script/Algorithms/heapSort.js"></script>
+    <script src="./script/Algorithms/insertionSort.js"></script>
+    <script src="./script/Algorithms/mergeSort.js"></script>
+    <script src="./script/Algorithms/quickSort.js"></script>
+    <script src="./script/Algorithms/selectionSort.js"></script>
+  </body>
+</html>
+
+<!-- 
+  Done by : Saravanan Sathiyamoorthi
+ -->
