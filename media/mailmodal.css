@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+* {
+  font-family: "Varela Round", sans-serif;
+  color: whitesmoke;
+}
+
+body {
+  background-color: rgb(27, 26, 29);
+}
+
+a {
+  text-decoration: none;
+}
+
+modal {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.mailcontainer {
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  right: 30%;
+}
+
+.mailheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid whitesmoke;
+}
+.mailbody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.mailelements {
+  background-color: transparent;
+  border: 1px solid whitesmoke;
+  padding: 10px;
+  margin: 10px;
+}
+
+#message {
+  min-height: 100px;
+  min-width: 300px;
+  scroll-behavior: smooth;
+}
+
+.mailfooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+#footerbtn {
+  background-color: transparent;
+  border: 1px solid whitesmoke;
+  padding: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+#footerbtn:hover {
+  border: 1px solid chartreuse;
+  color: chartreuse;
+}
+
+#close {
+  background-color: transparent;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  padding: 5px;
+}
+
+#close:hover {
+  border: 1px solid red;
+  color: red;
+}
+
+.mailResponse {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.response {
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  right: 30%;
+}
+
+.responseheader {
+  padding: 5px;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.responsebody {
+  padding: 10px;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.responsefooter {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+}
+
+#continue_btn {
+  padding: 5px 15px;
+  background-color: transparent;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+#continue_btn:hover {
+  border: 1px solid chartreuse;
+  color: chartreuse;
+}
+
+#readme {
+  text-decoration: none;
+  color: rgb(91, 91, 253);
+}
+
+/* 
+Done by : Saravanan Sathiyamoorthi
+ */

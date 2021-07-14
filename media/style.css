@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+* {
+  font-family: "Varela Round", sans-serif;
+  color: whitesmoke;
+}
+
+body {
+  background-color: rgb(27, 26, 29);
+  color: whitesmoke;
+  overflow-x: hidden;
+}
+
+header {
+  margin: 0px 2px;
+  padding: 10px;
+  border-bottom: 2px solid thistle;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#array_size {
+  width: 200px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+#array_size::before {
+  content: "25";
+  position: absolute;
+  margin-top: 20px;
+}
+
+#array_size::after {
+  content: "300";
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 175px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  padding: 8px;
+  margin-right: 7px;
+  background-color: rgb(27, 26, 29);
+}
+
+button:hover {
+  color: turquoise;
+  border: 1px solid turquoise;
+}
+
+.createArray > button {
+  border-color: chartreuse;
+}
+
+.createArray > button:hover {
+  color: chartreuse;
+}
+
+a {
+  text-decoration: none;
+}
+
+visualizer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-bottom: 1px solid thistle;
+  min-height: 70vh;
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+}
+footer a:hover,
+i:hover {
+  color: rgb(105, 105, 247);
+}
+
+footer i {
+  color: rgb(105, 105, 247);
+  font-size: 30px;
+  padding: 10px;
+}
+
+modal {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+  display: none;
+}
+
+.testelements {
+  border: 0.7px solid black;
+}
+
+#about {
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  margin-top: 15px;
+  z-index: 7;
+  color: chartreuse;
+}
+
+/* 
+Done by : Saravanan Sathiyamoorthi
+ */

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Saravanan-Sathiyamoorthi" />
+    <link rel="stylesheet" href="./mailmodal.css" />
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+    <title>Mail Modal</title>
+  </head>
+  <body>
+    <!--  -->
+    <modal>
+      <div class="mailcontainer">
+        <div class="mailheader">
+          <h2>Send Your Message!</h2>
+          <button id="close"><a href="../index.html">&times;</a></button>
+        </div>
+        <form
+          method="POST"
+          action="./mailresponse.html"
+          autocomplete="off"
+          id="mailform"
+        >
+          <div class="mailbody">
+            <div class="username" id="username">
+              Enter Your Name :
+              <input
+                type="text"
+                id="name"
+                required="true"
+                placeholder="Your Name"
+                class="mailelements"
+              />
+            </div>
+
+            <div class="useremail" id="useremail">
+              Enter Your Email :
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required="true"
+                placeholder="Your Email"
+                class="mailelements"
+              />
+            </div>
+            <div class="userdata" id="userdata">
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                placeholder="Enter your message"
+                class="mailelements"
+              ></textarea>
+            </div>
+          </div>
+          <div class="mailfooter" id="mailfooter">
+            <button type="submit" id="footerbtn">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </modal>
+    <script src="../script/mail.js"></script>
+  </body>
+</html>
+
+<!-- 
+  Done by : Saravanan Sathiyamoorthi
+ -->

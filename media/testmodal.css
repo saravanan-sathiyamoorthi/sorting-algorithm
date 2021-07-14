@@ -1,0 +1,149 @@
+.modalcontent {
+  position: fixed;
+  top: 25%;
+  left: 20%;
+  right: 20%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.modalheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 15px;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.modalfooter {
+  padding: 15px;
+  border-top: 1px solid whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#closemodal {
+  background-color: transparent;
+  float: right;
+}
+#closemodal:hover {
+  color: red;
+  border: red 1px solid;
+}
+
+#testvisualize {
+  background-color: transparent;
+}
+
+#bubbletrue {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: green;
+  display: none;
+}
+
+#bubblefalse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: red;
+  display: none;
+}
+
+#heaptrue {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: green;
+  display: none;
+}
+
+#heapfalse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: red;
+  display: none;
+}
+
+#insertiontrue {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: green;
+  display: none;
+}
+
+#insertionfalse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: red;
+  display: none;
+}
+
+#mergetrue {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: green;
+  display: none;
+}
+
+#mergefalse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: red;
+  display: none;
+}
+
+#quicktrue {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: green;
+  display: none;
+}
+
+#quickfalse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: red;
+  display: none;
+}
+
+#selectiontrue {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: green;
+  display: none;
+}
+
+#selectionfalse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: red;
+  display: none;
+}
+
+/* 
+Done by : Saravanan Sathiyamoorthi
+ */
