@@ -1,24 +1,20 @@
-let mailform = document.getElementById("mailform");
-let username = document.getElementById("name");
-console.log(username);
-let useremail = document.getElementById("email");
-let message = document.getElementById("message");
-let usr_name = document.getElementById("usr_name");
-let submitbtn = document.getElementById("footerbtn");
-console.log(username);
+function myFunction() {
+  let mailform = document.getElementById("mailform");
+  let username = document.getElementById("mailform").name.value;
+  console.log("user-name = ", username);
+  let useremail = document.getElementById("mailform").email.value;
+  console.log("user-email = ", useremail);
+  let usermessage = document.getElementById("mailform").message.value;
+  console.log("user-message = ", usermessage);
+  localStorage.setItem("username", mailform.name.value);
+  localStorage.setItem("useremail", mailform.email.value);
+  localStorage.setItem("message", mailform.message.value);
+  console.log("localstorage", localStorage.getItem("username"));
 
-// Done by : Saravanan Sathiyamoorthi
+  return username, useremail, usermessage;
+}
 
-window.onload = () => {
-  const storedata = () => {
-    localStorage.setItem("usr_name", username.value);
-    localStorage.setItem("usr_mail", useremail.value);
-    console.log(usr_name);
-  };
-
-  submitbtn.addEventListener("click", storedata);
-};
-
-window.addEventListener("DOMContentLoaded", () => {
-  console.log("usrnm", username);
-});
+// done by saravanan sathiyamoorthi
+let mailresponse = document.getElementById("mailresponse");
+console.log(mailresponse);
+let;
