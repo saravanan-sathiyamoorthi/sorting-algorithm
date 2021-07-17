@@ -3,7 +3,7 @@ const bubbleSort = () => {
   console.log("bubbleSort");
   disable_buttons();
   sortingArray = unsorted_array();
-  console.log("sorting ARr", sortingArray);
+  console.log("sorting Array", sortingArray);
   lengthOfArray = sortingArray.length;
   let delay = 10;
   for (i = 0; i < lengthOfArray; i++) {
