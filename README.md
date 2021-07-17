@@ -1,5 +1,4 @@
-# sorting-algorithm
-This a project that is written in html, css and js . This project visualises some sorting algorithms
+# Sorting Visualizer
 
 ---
 
