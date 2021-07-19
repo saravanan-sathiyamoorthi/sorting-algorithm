@@ -12,7 +12,7 @@ selectiontrue = document.getElementById("selectiontrue");
 selectionfalse = document.getElementById("selectionfalse");
 
 const test_algo = () => {
-  // console.clear();
+  console.clear();
   defaultArray = unsorted_array();
   const bubble = bubbletest(defaultArray);
   const heap = heaptest();
@@ -75,6 +75,19 @@ const test_algo = () => {
   } else {
     console.log("selection sort unSuccessful!  :(");
     selectionfalse.style.display = "flex";
+  }
+
+  if (
+    bubble == sortedArray &&
+    heap == sortedArray &&
+    insertion == sortedArray &&
+    merge == sortedArray &&
+    quick == sortedArray &&
+    selection == sortedArray
+  ) {
+    alert("All Algorithms Work SuccessFully !");
+  } else {
+    alert("Some Algorithms Does not Work Properly Check Them Below !");
   }
 };
 
