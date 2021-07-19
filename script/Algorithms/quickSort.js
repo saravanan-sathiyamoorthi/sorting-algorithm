@@ -9,10 +9,6 @@ const quickSort = () => {
   console.log("unsorted Array", sortingArray);
 };
 
-const quicktest = () => {
-  //code for quick sort
-};
-
 quick.addEventListener("click", quickSort);
 
 // Done by : Saravanan Sathiyamoorthi

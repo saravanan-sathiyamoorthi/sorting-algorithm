@@ -9,10 +9,6 @@ const insertionSort = () => {
   console.log("unsorted Array", sortingArray);
 };
 
-const insertiontest = () => {
-  // code for insertion sort
-};
-
 insertion.addEventListener("click", insertionSort);
 
 // Done by : Saravanan Sathiyamoorthi

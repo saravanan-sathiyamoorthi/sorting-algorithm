@@ -9,10 +9,6 @@ const heapSort = () => {
   console.log("unsorted Array", sortingArray);
 };
 
-const heaptest = () => {
-  // code for heap sort
-};
-
 heap.addEventListener("click", heapSort);
 
 // Done by : Saravanan Sathiyamoorthi

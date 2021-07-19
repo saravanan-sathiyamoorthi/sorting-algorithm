@@ -9,10 +9,6 @@ const mergeSort = () => {
   console.log("unsorted Array", sortingArray);
 };
 
-const mergetest = () => {
-  //code for merge sort
-};
-
 merge.addEventListener("click", mergeSort);
 
 // Done by : Saravanan Sathiyamoorthi
