@@ -4,8 +4,10 @@ const bubbleSort = () => {
   disable_buttons();
   sortingArray = unsorted_array();
   console.log("sorting Array", sortingArray);
-  lengthOfArray = sortingArray.length;
   let delay = 10;
+  for (j = 0; j < sortingArray.length; j++)
+    visualize(`bar-${j + 1}`, sortingArray[j], "orange", (delay += 10));
+  lengthOfArray = sortingArray.length;
   for (i = 0; i < lengthOfArray; i++) {
     visualize(`bar-${i + 1}`, sortingArray[i], "white", (delay += 10));
     for (j = i + 1; j < lengthOfArray; j++) {
