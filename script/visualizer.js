@@ -17,7 +17,6 @@ async function visualize(target, height, color, delay_time) {
 const disable_buttons = () => {
   create_array.disabled = true;
   array_size.disabled = true;
-  test_btn.disabled = true;
   for (let i = 0; i < algos.children.length; i++) {
     algos.children[i].disabled = true;
   }
@@ -27,7 +26,6 @@ function enable_buttons(delay_time) {
   window.setTimeout(function () {
     create_array.disabled = false;
     array_size.disabled = false;
-    test_btn.disabled = false;
     for (let i = 0; i < algos.children.length; i++) {
       algos.children[i].disabled = false;
     }

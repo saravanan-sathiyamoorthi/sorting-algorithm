@@ -12,7 +12,7 @@ const bubbleSort = () => {
     visualize(`bar-${i + 1}`, sortingArray[i], "white", (delay += 10));
     for (j = i + 1; j < lengthOfArray; j++) {
       if (sortingArray[i] > sortingArray[j]) {
-        visualize(`bar-${j + 1}`, sortingArray[j], "purple", (delay += 10));
+        visualize(`bar-${i + 1}`, sortingArray[i], "purple", (delay += 10));
         visualize(`bar-${j + 1}`, sortingArray[j], "purple", (delay += 10));
         [sortingArray[i], sortingArray[j]] = [sortingArray[j], sortingArray[i]];
         visualize(`bar-${i + 1}`, sortingArray[i], "pink", (delay += 10));
@@ -25,6 +25,7 @@ const bubbleSort = () => {
   }
   enable_buttons(delay);
   console.log("sortedArray = ", sortingArray);
+  console.log(delay);
 };
 
 bubble.addEventListener("click", bubbleSort);

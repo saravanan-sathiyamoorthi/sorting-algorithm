@@ -6,7 +6,7 @@ const selectionSort = () => {
   lengthOfArray = sortingArray.length;
   let delay = 10;
   for (let i = 0; i < lengthOfArray; i++) {
-    visualize(`bar-${i + 1}`, sortingArray[i], "white", (delay += 10));
+    visualize(`bar-${i + 1}`, sortingArray[i], "orange", (delay += 10));
     min_indx = i;
     for (let j = i + 1; j < lengthOfArray; j++) {
       visualize(`bar-${j + 1}`, sortingArray[j], "orange", (delay += 10));
@@ -16,14 +16,14 @@ const selectionSort = () => {
         visualize(
           `bar-${min_indx + 1}`,
           sortingArray[min_indx],
-          "purple",
+          "red",
           (delay += 10)
         );
       }
       visualize(
         `bar-${min_indx + 1}`,
         sortingArray[min_indx],
-        "purple",
+        "red",
         (delay += 10)
       );
     }
@@ -44,6 +44,7 @@ const selectionSort = () => {
   }
   enable_buttons(delay);
   console.log("unsorted Array", sortingArray);
+  console.log(delay);
 };
 
 selection.addEventListener("click", selectionSort);

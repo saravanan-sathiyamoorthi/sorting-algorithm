@@ -64,6 +64,7 @@ const mergeSort = () => {
     visualize(`bar-${j + 1}`, sortingArray[j], "green", (delay += 10));
   enable_buttons(delay);
   console.log("Sorted Array", sortingArray);
+  console.log(delay);
 };
 
 merge.addEventListener("click", mergeSort);
