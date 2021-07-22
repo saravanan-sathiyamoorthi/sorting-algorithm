@@ -40,6 +40,7 @@ const newArray = () => {
   }
   array = bar_height;
   console.log("Array = ", array);
+  return array;
 };
 
 const unsorted_array = () => {
@@ -62,6 +63,7 @@ const openmodal = () => {
 
 const closemodal = () => {
   modal.style.display = "none";
+  sizeOf();
 };
 
 const visualize_fun = () => {

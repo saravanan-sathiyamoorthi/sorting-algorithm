@@ -1,4 +1,4 @@
-function visualize(target, height, color, delay_time) {
+async function visualize(target, height, color, delay_time) {
   // console.log(delay_time);
   height = height;
   window.setTimeout(function () {
