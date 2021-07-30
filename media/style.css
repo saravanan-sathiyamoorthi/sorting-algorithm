@@ -130,6 +130,24 @@ modal {
   color: chartreuse;
 }
 
+#ai {
+  position: fixed;
+  top: 0%;
+  right: 10%;
+  margin-top: 15px;
+  margin-right: 15px;
+  z-index: 7;
+  border: 1px solid whitesmoke;
+  border-radius: 8px;
+  padding: 5px 20px;
+  color: whitesmoke;
+}
+
+#ai:hover {
+  border: 1px solid turquoise;
+  color: turquoise;
+}
+
 /* 
 Done by : Saravanan Sathiyamoorthi
  */

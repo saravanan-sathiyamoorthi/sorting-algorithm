@@ -57,24 +57,7 @@ const sizeOf = () => {
 
 window.onload = sizeOf();
 
-const openmodal = () => {
-  modal.style.display = "block";
-};
-
-const closemodal = () => {
-  modal.style.display = "none";
-  sizeOf();
-};
-
-const visualize_fun = () => {
-  sizeOf();
-  closemodal();
-};
-
 create_array.addEventListener("click", newArray);
 array_size.addEventListener("input", sizeOf);
-test_btn.addEventListener("click", openmodal);
-close_btn.addEventListener("click", closemodal);
-visualize_btn.addEventListener("click", visualize_fun);
 
 // Done by : Saravanan Sathiyamoorthi

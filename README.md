@@ -33,9 +33,9 @@ The following are the sorting algorithms that are visualized.
 ### Code Layout and Animations:
 
 The following is the structure of the code -
-
-
 ![file structure](./media/readme_media/file_structure.png)
+![file structure](./media/readme_media/file_structure2.png)
+![file structure](./media/readme_media/file_structure3.png)
 
 The UI design of Webpage :
 

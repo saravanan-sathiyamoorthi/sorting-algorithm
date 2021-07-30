@@ -8,7 +8,7 @@ async function visualize(target, height, color, delay_time) {
       height +
       "px; width: " +
       width +
-      "px;margin : 0px  0.5px ;background :" +
+      "px;margin : 0px  0.25px ;background :" +
       color +
       ";";
   }, delay_time);
